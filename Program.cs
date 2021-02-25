@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Calculator
 {
@@ -16,7 +16,18 @@ namespace Calculator
 
             Console.Write("enter operand: ");
             char operand = Convert.ToChar(Console.ReadLine());
+
+            Calculate( numOne, numTwo, operand);
           
+
+            Console.ReadLine();
+        
+
+        }
+
+
+        static void Calculate (int numOne, int numTwo,char operand)
+        {
             switch (operand)
             {
 
@@ -45,10 +56,7 @@ namespace Calculator
                     break;
 
             }
-
-            Console.ReadLine();
-        
-
         }
     }
 }
+
